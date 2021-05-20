@@ -1,0 +1,537 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(248, 252, 241);
+}
+header {
+  background: #016669;
+  height: 68px;
+}
+.logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+.logo-text {
+  margin: 25px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.logo-text span {
+  color: #06d4db;
+}
+h2 {
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.contact a {
+  color: #04686b;
+  border: 2px solid #03a0a5;
+  border-radius: 5px;
+  padding: 1%;
+}
+.contact a:hover {
+  background: #03a0a5;
+  border: 5px solid #03a0a5;
+  color: white;
+}
+ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  padding: 22px;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  border: 1.5px solid #01383a;
+}
+ul li a:hover {
+  background: #01383a;
+  transition: 0.5s;
+}
+.menu-toggle {
+  display: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Merriweather Sans", sans-serif;
+}
+p {
+  font-family: "Rubik", sans-serif;
+  margin-left: 2%;
+  font-size: 25px;
+}
+
+.single-post {
+  width: 100%;
+  height: 390px;
+  border: 5px solid #035c5f;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+#carousel-img {
+  width: 350px;
+  height: 350px;
+  padding: 3px;
+  opacity: 0.8;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#carousel-img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+  object-fit: cover;
+  margin-top: -8.2%;
+  opacity: 1;
+}
+.single-post h3 {
+  margin-top: -5%;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.previous,
+.next {
+  display: block;
+  font-size: 3.5em;
+  border: 3px solid #02a3a8;
+  background-color: #02a3a8;
+  border-radius: 30px;
+  width: 50px;
+  text-align: center;
+}
+.previous {
+  margin-right: 50px;
+}
+.next {
+  margin-left: 50px;
+}
+.previous:hover,
+.next:hover {
+  color: #016669;
+  cursor: pointer;
+}
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.index-content {
+  background: rgb(252, 250, 241);
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  display: none;
+}
+#post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#post a {
+  font-size: 1.4em;
+  text-align: center;
+  margin-left: 17%;
+  font-family: "Merriweather Sans", sans-serif;
+  text-decoration: none;
+  color: #01383a;
+}
+
+.post-two img {
+  display: none;
+}
+
+.post-text {
+  word-wrap: break-word;
+}
+
+.recent-blog .date {
+  font-size: 0.7em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+#v-btn {
+  display: block;
+  background: #02888d;
+  font-size: 30px;
+  color: white;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: 5px solid #02888d;
+}
+#v-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.recent-blog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  border: 20px solid #02888d;
+  padding: 5px;
+  padding: 30px;
+  width: 70%;
+}
+.read {
+  margin-left: 60%;
+  width: 30%;
+  border: 5px solid #01383a;
+  border-radius: 20px;
+  background: #03979ca1;
+  font-size: 1.4em;
+  padding-left: 9%;
+}
+#blog-img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+.read:hover {
+  opacity: 0.8;
+  background: #02adb3a1;
+}
+.recent-blog p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+  color: #01383a;
+  margin-right: 50%;
+}
+.recent-blog h3 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0;
+}
+.recetnt {
+  margin: 0 auto;
+}
+
+.postimg {
+  cursor: zoom-in;
+  width: 70%;
+  margin: 2% auto 2% auto;
+}
+.modal {
+  display: none;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: zoom-out;
+}
+
+.modal-container {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-container img {
+  height: 700px;
+  width: 900px;
+}
+.post-two {
+  max-width: 80%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+.post-two h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.post-two p {
+  font-size: 1.6em;
+  font-family: "Rubik", sans-serif;
+}
+footer {
+  height: 100px;
+  box-sizing: content-box;
+  background-color: #016669;
+  clear: both;
+}
+footer a {
+  padding-left: 1%;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  margin-right: 1%;
+  font-size: 1.5em;
+  color: white;
+  display: inline-block;
+  padding: 0.5%;
+}
+footer a:hover {
+  color: #07b3b9;
+  transition: 0.5s;
+}
+.social {
+  float: right;
+  padding-left: 0;
+}
+#contactForm {
+  width: 70%;
+  margin: 1% auto;
+}
+.form-error {
+  color: rgb(240, 1, 1);
+  font-size: 0.8em;
+  display: none;
+}
+.message {
+  display: none;
+  background: #016669;
+  padding: 1em;
+  color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Merriweather Sans", sans-serif;
+  width: 70%;
+  margin: 10% auto 20%;
+}
+label {
+  display: block;
+  margin-top: 1em;
+}
+#adress {
+  height: 50px;
+}
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.button {
+  background: rgb(10, 70, 102);
+  border: none;
+  width: 200px;
+  padding: 1em;
+  color: rgb(252, 243, 243);
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2em;
+  display: block;
+  margin: 5% auto;
+}
+@media screen and (max-width: 668px) {
+  button {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  header ul {
+    width: 100%;
+    background-color: #027d81;
+    max-height: 0px;
+    overflow: hidden;
+    margin-top: -15px;
+  }
+  .show {
+    max-height: 100em;
+  }
+  ul li {
+    width: 100%;
+  }
+
+  header ul li a {
+    border: 0.1px solid black;
+  }
+  .logo {
+    margin: 0 0 0 0;
+  }
+
+  .hamburger,
+  .close-burger {
+    font-size: 1.8em;
+    background-color: #016669;
+    color: white;
+
+    height: 40px;
+    cursor: pointer;
+  }
+  .close-burger {
+    display: none;
+  }
+  .nav-bar.show {
+    text-align: center;
+  }
+  .fade-out {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    background: black;
+    opacity: 40%;
+  }
+  .previous,
+  .next {
+    font-size: 2em;
+    margin: 0%;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 861px) {
+  .latest-post {
+    width: 360px;
+  }
+  #carousel-img {
+    width: 370px;
+    height: 380px;
+  }
+  #carousel-img:hover {
+    margin-top: -9%;
+  }
+  .previous {
+    margin-left: 50%;
+  }
+  .next {
+    margin-left: -50%;
+  }
+  #footer {
+    font-size: 0.7em;
+  }
+  .social img {
+    width: 30px;
+  }
+  .read {
+    float: left;
+    font-size: 20px;
+  }
+  .postimg img {
+    width: 100%;
+  }
+  .modal-container img {
+    width: 700px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  main .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+  .next {
+    font-size: 2em;
+    width: 30px;
+    float: right;
+  }
+  .previous {
+    margin-left: 80px;
+    font-size: 2em;
+    width: 30px;
+    margin: 0;
+    float: right;
+  }
+  .latest-post {
+    width: 100%;
+  }
+
+  #carousel-img {
+    width: 350px;
+    height: 360px;
+  }
+  #carousel-img:hover {
+    margin-top: -12%;
+  }
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.5em;
+  }
+  #footer img {
+    width: 20px;
+  }
+  #footer a {
+    margin: 0;
+    padding: 10px;
+  }
+  .recent-blog {
+    width: 99%;
+  }
+  .read {
+    font-size: 15px;
+    color: white;
+    width: 43%;
+  }
+  .post-two p {
+    font-size: 20px;
+  }
+  .post-two h2 {
+    font-size: 30px;
+  }
+  .post-container img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .modal-container img {
+    height: 300px;
+    width: 400px;
+    overflow: auto;
+  }
+  @media screen and (max-width: 1048px) {
+    .next {
+      margin-left: -50%;
+    }
+    .previous {
+      margin-left: 50%;
+    }
+    #blog-img {
+      width: 100%;
+    }
+    .recent-blog {
+      width: 90%;
+    }
+    .postimg img {
+      margin-left: 0;
+    }
+  }
+}
