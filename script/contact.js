@@ -44,7 +44,7 @@ function validateForm(e){
 		message.style.display = "block";
 		form.style.display = "none";
 	} else {
-		form.reset();
+		form.false();
 	}
 	
 }

@@ -11,10 +11,11 @@ async function apiCall(){
 		console.log(result);
 		blog.innerHTML = "";
 		let i = 0;
+		console.log(result);
 		for (i; i < 9; i++){
 			blog.innerHTML += `<div class="recent-blog">
 			<h3>${result[i].title.rendered}</h3>
-			<img id="blog-img" src="${result[i].source_url}" alt="${result[i].alt_text}">
+			<a href="post.html?id=${result[i].id}"><img id="blog-img" src="${result[i].source_url}" alt="${result[i].slug} + picture"></a>
 			<div class="date"><p>${result[i].date}</p></div>
 			<div class="read"><a href="post.html?id=${result[i].id}"><p>Read more</p></a></div>
 			</div>

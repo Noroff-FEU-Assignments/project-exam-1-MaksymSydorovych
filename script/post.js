@@ -18,7 +18,7 @@ async function	getPost(){
 	
 	const img = result.source_url;
 	title.innerHTML = document.title + `${result.title.rendered}`;
-	postimg.innerHTML = `<img src = "${img}" onclick="onClick(this)">`
+	postimg.innerHTML = `<img src = "${img}" 	onclick="onClick(this)">`
 	}
 	catch(error){
 		console.log(error)

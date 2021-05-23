@@ -64,7 +64,7 @@ async function getBlogPosts(){
 			blogpostsContainer.innerHTML += `<div class="latest-post"><div class="single-post"><a href="post.html?id=${blogs[i].id}">
 			
 			<h3 class="title">${blogs[i].title.rendered}</h3>
-			<img id="carousel-img" src="${blogs[i].source_url}" alt="${blogs[i].alt_text}">
+			<img id="carousel-img" src="${blogs[i].source_url}" alt="${blogs[i].slug} + picture">
 			</div>
 			
 			<div></a>
